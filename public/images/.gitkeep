@@ -1,0 +1,8 @@
+# This file ensures the images directory is tracked by git
+# Add your images here:
+# - psicologa-hero.jpg (hero image)
+# - psicologa-photo.jpg (about photo)
+# - og-image.jpg (social media image)
+# - blog/ (blog images)
+# - uploads/ (CMS uploads)
+
