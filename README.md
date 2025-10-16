@@ -116,8 +116,15 @@ npm run type-check   # TypeScript check
 ### Vercel (Raccomandato)
 
 1. **Collega il repository a Vercel**
-2. **Configura le variabili d'ambiente** (se necessarie)
-3. **Deploy automatico** ad ogni push
+2. **Crea un'app OAuth GitHub**
+   - Homepage URL: dominio del sito (es. `https://sito-psicologa.vercel.app`)
+   - Authorization callback URL: `https://<tuo-dominio>/api/decap-cms/callback`
+3. **Configura le variabili d'ambiente** in Vercel
+   - `SITE_URL` → dominio pubblico del sito
+   - `GITHUB_CLIENT_ID` e `GITHUB_CLIENT_SECRET` presi dall'app OAuth
+4. **Deploy automatico** ad ogni push
+
+> ℹ️ Non servono username o password dedicate per il CMS: dopo il deploy accedi a `/admin` e usa il pulsante **Login with GitHub**.
 
 ### Netlify
 
@@ -129,11 +136,11 @@ npm run type-check   # TypeScript check
 
 ### Configurazione CMS
 
-Per abilitare Decap CMS:
+Per abilitare Decap CMS con GitHub OAuth:
 
-1. **Vai su `/admin`**
-2. **Configura Netlify Identity** o GitHub OAuth
-3. **Inizia a gestire i contenuti**
+1. **Aggiorna `public/admin/config.yml`** inserendo il tuo repository GitHub e, se necessario, il dominio personalizzato
+2. **Imposta le variabili d'ambiente** `GITHUB_CLIENT_ID` e `GITHUB_CLIENT_SECRET`
+3. **Vai su `/admin`** e scegli **Login with GitHub** per autorizzare l'applicazione
 
 ## 📁 Struttura del Progetto
 

@@ -34,11 +34,13 @@ vercel
 vercel --prod
 ```
 
-### Variabili d'Ambiente (se necessarie)
+### Variabili d'Ambiente (obbligatorie per il CMS)
 
 ```bash
 # Aggiungi in Vercel Dashboard > Settings > Environment Variables
 SITE_URL=https://sito-psicologa.vercel.app
+GITHUB_CLIENT_ID=la_client_id_della_tua_app_oauth
+GITHUB_CLIENT_SECRET=la_client_secret_della_tua_app_oauth
 ```
 
 ## 🌐 Deploy su Netlify
@@ -74,23 +76,32 @@ SITE_URL=https://sito-psicologa.vercel.app
    - Vai su `https://sito-psicologa.netlify.app/admin`
    - Registrati e inizia a gestire i contenuti
 
-## 📱 Deploy su Vercel con CMS
+## 📱 Deploy su Vercel con Decap CMS
 
 ### Setup Completo
 
-1. **Deploy su Vercel** (seguire i passaggi sopra)
+1. **Crea un'app OAuth GitHub**
+   - Homepage URL: dominio del sito (es. `https://sito-psicologa.vercel.app`)
+   - Authorization callback URL: `https://<tuo-dominio>/api/decap-cms/callback`
 
-2. **Configura Netlify CMS**
-   - Il CMS funziona anche su Vercel
-   - Accedi a `/admin` per gestire i contenuti
+2. **Configura l'app in Vercel**
+   - Imposta `GITHUB_CLIENT_ID` e `GITHUB_CLIENT_SECRET`
+   - Verifica `SITE_URL`
 
-3. **Configurazione Identity**
+3. **Aggiorna la configurazione del CMS**
    ```yaml
    # public/admin/config.yml
    backend:
-     name: git-gateway
+     name: github
+     repo: your-github-username/sito-psicologa
      branch: main
+     base_url: https://sito-psicologa.vercel.app
+     auth_endpoint: api/decap-cms/auth
    ```
+
+4. **Accedi a `/admin`**
+   - Clicca su **Login with GitHub**
+   - Autorizza l'applicazione per gestire i contenuti
 
 ## 🔧 Configurazioni Post-Deploy
 
@@ -188,9 +199,9 @@ npm install --production=false
 
 **CMS Non Funziona:**
 ```bash
-# Verifica configurazione Identity
-# Controlla permessi repository
-# Verifica Git Gateway
+# Controlla che GITHUB_CLIENT_ID e GITHUB_CLIENT_SECRET siano corretti
+# Verifica che l'app OAuth GitHub abbia il callback https://<dominio>/api/decap-cms/callback
+# Assicurati che public/admin/config.yml punti al repository corretto
 ```
 
 **Images Non Caricano:**

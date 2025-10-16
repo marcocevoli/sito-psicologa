@@ -1,6 +1,11 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: your-github-username/sito-psicologa
   branch: main
+  base_url: https://sito-psicologa.vercel.app
+  auth_endpoint: api/decap-cms/auth
+
+local_backend: true
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
