@@ -76,3 +76,5 @@ Gestire l'ansia è un processo che richiede tempo e pratica. Queste strategie po
 
 La terapia cognitivo-comportamentale (CBT) e altre forme di psicoterapia si sono dimostrate molto efficaci nel trattamento dell'ansia, aiutando le persone a sviluppare strategie personalizzate per gestire i loro sintomi e migliorare la qualità della vita.
 
+
+

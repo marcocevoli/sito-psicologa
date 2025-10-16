@@ -98,3 +98,5 @@ Una comunicazione efficace nella coppia richiede impegno, pazienza e pratica cos
 
 Ricorda: la comunicazione è una competenza che si può imparare e migliorare nel tempo. L'importante è iniziare con piccoli passi e mantenere la volontà di ascoltare e comprendere l'altro.
 
+
+

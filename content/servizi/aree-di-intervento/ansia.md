@@ -80,3 +80,5 @@ Assolutamente sì. Il trattamento è progettato per permetterti di continuare le
 ### Cosa posso fare da solo per gestire l'ansia?
 Tecniche di respirazione, esercizio fisico regolare, buon sonno e una dieta equilibrata possono essere molto utili.
 
+
+

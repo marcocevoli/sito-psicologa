@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+dist/
+build/
+*.config.js
+*.config.mjs
+public/
+content/
+.env*
+
+

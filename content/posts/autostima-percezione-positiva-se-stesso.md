@@ -117,3 +117,5 @@ Costruire una sana autostima è un processo che richiede tempo, pazienza e impeg
 
 Ricorda: il tuo valore non dipende dai tuoi successi, dal tuo aspetto o dall'approvazione degli altri. Il tuo valore è intrinseco e meriti amore, rispetto e felicità, indipendentemente dalle circostanze esterne.
 
+
+

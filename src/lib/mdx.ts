@@ -116,3 +116,5 @@ export function getFeaturedPosts(limit: number = 3): PostMeta[] {
   return allPosts.slice(0, limit);
 }
 
+
+

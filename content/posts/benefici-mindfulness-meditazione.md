@@ -147,3 +147,5 @@ Ricorda che la mindfulness è un'abilità che si sviluppa nel tempo. Sii pazient
 
 Iniziare oggi, anche con solo 5 minuti di pratica, può essere il primo passo verso una vita più consapevole, equilibrata e soddisfacente.
 
+
+

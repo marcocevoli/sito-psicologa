@@ -64,3 +64,5 @@ collections:
       - {label: "Ordine", name: "order", widget: "number", default: 0}
       - {label: "Attivo", name: "active", widget: "boolean", default: true}
 
+
+

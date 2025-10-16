@@ -57,3 +57,5 @@ Sì, hai sempre la libertà di decidere quando interrompere il percorso. Tuttavi
 ### Le informazioni condivise sono riservate?
 Assolutamente sì. Tutto ciò che viene condiviso durante le sedute è protetto dal segreto professionale e dal Codice Deontologico degli Psicologi.
 
+
+

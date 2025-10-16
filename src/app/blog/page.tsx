@@ -231,3 +231,5 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
   );
 }
 
+
+

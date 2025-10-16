@@ -57,3 +57,5 @@ Sì, è normale provare imbarazzo o timore all'inizio. Il mio ruolo è quello di
 ### Cosa succede se non funziona?
 Se il percorso non dovesse portare ai risultati sperati, esploreremo insieme le opzioni alternative, inclusa la possibilità di percorsi individuali.
 
+
+
